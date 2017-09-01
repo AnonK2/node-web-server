@@ -32,7 +32,7 @@ var maintenanceMiddleware = (req, res) => {
     });
 };
 
-// app.use(maintenanceMiddleware);
+app.use(maintenanceMiddleware);
 app.use(express.static(__dirname + '/public'));
 
 //registerHelper
