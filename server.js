@@ -8,7 +8,7 @@ const app = express();
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000); //if process.env.PORT doesn't exist, port set to "3000" instead.
 
 app.use((req, res, next) => {
     var now = new Date().toString();
